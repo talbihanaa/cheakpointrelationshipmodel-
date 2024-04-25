@@ -1,0 +1,22 @@
++-------------------+       +------------------+      +-------------------+
+|     Gymnasium     |       |      Session     |      |      Coach        |
++-------------------+       +------------------+      +-------------------+
+| gym_id (PK)       |       | session_id (PK)  |      | coach_id (PK)     |
+| name              |-------| gym_id (FK)      |      | last_name          |
+| address           |       | sport            |------| first_name         |
+| telephone_number  |       | schedule         |      | age                |
++-------------------+       | max_capacity     |      | specialty          |
+                            | coach1_id (FK)   |      +-------------------+
+                            | coach2_id (FK)   |
+                            +------------------+
+
++-------------------+
+|      Member       |
++-------------------+
+| member_id (PK)    |
+| last_name         |
+| first_name        |
+| address           |
+| date_of_birth     |
+| gender            |
++-------------------+
